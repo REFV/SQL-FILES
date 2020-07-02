@@ -1,0 +1,182 @@
+create database fitnessTracker;
+use fitnessTracker;
+
+create table overweight_female_workout(id int primary key auto_increment,day int not null,exercise_name varchar(255) not null,exercise_description text not null,amount int not null,exercise_url text not null);
+select * from overweight_female_workout;
+
+insert into overweight_female_workout(day,exercise_name,exercise_description,amount,exercise_url) 
+values(1,'WALL PUSHUPS','Intially stand a inch or two away from the wall,Stretch your arms and touch the wall,lean and push against the wall with your arms and then come back,Repeat this',20,'https://i.postimg.cc/rm8Cjvqy/wall-pushups.jpg'),
+	(1,'SQUATS','Stand with your legs a few inches apart, Stretch your arms to the front and bring the body down,till your thighs are parallel to the floor,Now come back to the intial position,Repeat it',20,'https://i.postimg.cc/VkCRkq7w/squats.jpg'),
+    (1,'SIDE LYING LEG LIFT RIGHT','Start by lying on your side, with the head, resting on the left arm.Now, lift your right leg and then come back to the initial postition.Repeat it.',20,'https://i.postimg.cc/YSBxGvVW/side-lying-leg-lift-right.jpg'),
+    (1,'SIDE LYING LEG LIFT LEFT','Start by lying on your side, with the head, resting on the right arm.Now, lift your left leg and then come back to the initial postition.Repeat it.',15,'https://i.postimg.cc/154BLhwf/side-lying-leg-lift-left.jpg'),
+    (1,'CLAPS OVER HEAD','Initially, stand by keeping your feet, few inches wide. Now, just lift your arms and clap on top of your head.Repeat this.',30,'https://i.postimg.cc/W3nSPs5J/clapsoverhead.jpg'),
+    (2,'WALL PUSHUPS','Intially stand a inch or two away from the wall,Stretch your arms and touch the wall,lean and push against the wall with your arms and then come back,Repeat this',21,'https://i.postimg.cc/rm8Cjvqy/wall-pushups.jpg'),
+    (2,'STANDING BICYCLE CRUNCHES','Start by lying on your back. Raise your right knee towards your left elbow. Return back to the inital position.Repeat the same on the other side',20,'https://i.postimg.cc/s2P4pVd0/standing-bicycle-crunches.jpg'),
+    (2,'FIRE HYDRANT LEFT','Initially be down on your hands and knees. Now, bend your left knee and raise your left leg to the side, until it is in the same level as your hip',20,'https://i.postimg.cc/7hZ9HjRt/fire-hydrant-left.jpg'),
+    (2,'ALTERNATE FIRE HYDRANT','Initially be down on your hands and knees. Now, bend your left knee and raise your left leg to the side, until it is in the same level as your hip',20,'https://i.postimg.cc/7hZ9HjRt/fire-hydrant-left.jpg'),
+     (2,'CLAPPING CRUNCHES','Lie down on the ground. Raise your upper body and bend your knees. Now, clap under the knee, by lifting the legs alternatively',15,'https://i.postimg.cc/1tPMT8rQ/clapping-crunches.jpg'),
+      (2,'PLANK','Lie down on the ground. Raise your upper body and bend your knees.Now,clap under the knees, by lifting the legs alternatively',30,'https://i.postimg.cc/bYmLCNG7/plank.jpg'),
+(3,'HEEL TOUCH','Intially lie down on your back and bend your legs,Take the support of your hands on the side,lift your head and touch your heels alternatively with your hands',20,'https://i.postimg.cc/jd9cTg4v/side-heel-touch.jpg'),
+(3,'ALTERNATE DONKEY KICKS','Initially be down on your hands and knees.Now lift the right leg with the knee bend and the leg pointing towards the ceiling.Stretch the leg and return back to the initial position.Repeat it.',20,'https://i.postimg.cc/N09CyJRF/donkey-kicks-left.jpg'),
+
+    (3,'CLAPPING CRUNCHES','Lie down on the ground. Raise your upper body and bend your knees. Now, clap under the knee, by lifting the legs alternatively',20,'https://i.postimg.cc/1tPMT8rQ/clapping-crunches.jpg'),
+(3,'BICYCLE CRUNCHES','Stand with your feet, few inches apart, raise your right knee toward your left elbow return back to the intial position,repeat the same on the other side',20,'https://i.postimg.cc/fRG8c23k/bicycle-crunches.jpg'),
+(3,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',20,'https://i.postimg.cc/HxbSzrZC/flutter-kicks.jpg'),
+(3,'PLANK','Lie down on the ground. Raise your upper body and bend your knees.Now,clap under the knees, by lifting the legs alternatively',35,'https://i.postimg.cc/bYmLCNG7/plank.jpg'),
+(4,'REST','REST',0,'REST'),
+(5,'ALTERNATER HEEL TOUCH','Intially lie down on your back and bend your legs,Take the support of your hands on the side,lift your head and touch your heels alternatively with your hands',26,'https://i.postimg.cc/jd9cTg4v/side-heel-touch.jpg'),
+(5,'WALL PUSHUPS','Intially stand a inch or two away from the wall,Stretch your arms and touch the wall,lean and push against the wall with your arms and then come back,Repeat this ',25,'https://i.postimg.cc/rm8Cjvqy/wall-pushups.jpg'),
+(5,'ADDUCTOR STRECT IN STANDING','Initially, keep your feet, few inches apart with your hands on your hip.Now, stretch your body to the left, by bending  your left leg.Be int this postiton for some time,return to the original position.Repeat this.',30,'https://i.postimg.cc/6p2HGJpD/adductor-stretch-right.jpg'),
+(5,'CLAPS OVER HEAD','Initially, stand by keeping your feet, few inches wide. Now, just lift your arms and clap on top of your head.Repeat this.',20,'https://i.postimg.cc/W3nSPs5J/clapsoverhead.jpg'),
+
+     (5,'BUTT BRIDGE','Lie on your back with your hands by your sides,your knees bent and feet flat on the floor.Raise your hips up to create a straight line from your knees to shoulders.If your hip sag or drop, lower yourself back on the floor.',15,'https://i.postimg.cc/hGVppLxs/butt-bridge.jpg'),
+      (5,'PLANK','Lie down on the ground. Raise your upper body and bend your knees.Now,clap under the knees, by lifting the legs alternatively',35,'https://i.postimg.cc/bYmLCNG7/plank.jpg'),
+
+    (6,'STANDING BICYCLE CRUNCHES','Start by lying on your back. Raise your right knee towards your left elbow. Return back to the inital position.Repeat the same on the other side',26,'https://i.postimg.cc/s2P4pVd0/standing-bicycle-crunches.jpg'),
+(6,'ALTERNATE SIDE LYING LEG LIFT','Start by lying on your side, with the head, resting on the left arm.Now, lift your right leg and then come back to the initial postition.Repeat it',25,'
+https://i.postimg.cc/YSBxGvVW/side-lying-leg-lift-right.jpg'),
+(6,'PLANK','Lie down on the ground. Raise your upper body and bend your knees.Now,clap under the knees, by lifting the legs alternatively',60,'https://i.postimg.cc/bYmLCNG7/plank.jpg'),
+(6,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',20,'https://i.postimg.cc/HxbSzrZC/flutter-kicks.jpg'),
+
+     (6,'SWIMMER AND SUPERMAN','Lie down with your face downwards, by stretching your hands forward.Raise your opposite arm and leg alternatively',20,'https://i.postimg.cc/sxDpWxbm/swimming.jpg'),
+(7,'SIDE LUNGE','Initially, stand by keeping your feet close to each other.Stretch your right leg, by lowering the body and keeping your left leg straight. Return to the initial position and repeat the same on the left leg',20,'https://i.postimg.cc/prcZpqbW/lunges.jpg'),
+(7,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',21,'https://i.postimg.cc/HxbSzrZC/flutter-kicks.jpg'),
+(7,'PLANK','Lie down on the ground. Raise your upper body and bend your knees.Now,clap under the knees, by lifting the legs alternatively',40,'https://i.postimg.cc/bYmLCNG7/plank.jpg'),
+
+
+     (7,'SWIMMER AND SUPERMAN','Lie down with your face downwards, by stretching your hands forward.Raise your opposite arm and leg alternatively',20,'https://i.postimg.cc/sxDpWxbm/swimming.jpg'),
+(7,'BICYCLE CRUNCHES','Stand with your feet, few inches apart, raise your right knee toward your left elbow return back to the intial position,repeat the same on the other side',20,'https://i.postimg.cc/fRG8c23k/bicycle-crunches.jpg'),
+
+    (7,'CLAPPING CRUNCHES','Lie down on the ground. Raise your upper body and bend your knees. Now, clap under the knee, by lifting the legs alternatively',26,'https://i.postimg.cc/1tPMT8rQ/clapping-crunches.jpg'),
+(8,'REST','REST',0,'REST'),
+
+(9,'WALL PUSHUPS','Intially stand a inch or two away from the wall,Stretch your arms and touch the wall,lean and push against the wall with your arms and then come back,Repeat this',21,'https://i.postimg.cc/rm8Cjvqy/wall-pushups.jpg'),
+    (9,'STANDING BICYCLE CRUNCHES','Start by lying on your back. Raise your right knee towards your left elbow. Return back to the inital position.Repeat the same on the other side',20,'https://i.postimg.cc/s2P4pVd0/standing-bicycle-crunches.jpg'),
+    (9,'FIRE HYDRANT LEFT','Initially be down on your hands and knees. Now, bend your left knee and raise your left leg to the side, until it is in the same level as your hip',20,'https://i.postimg.cc/7hZ9HjRt/fire-hydrant-left.jpg'),
+    (9,'ALTERNATE FIRE HYDRANT','Initially be down on your hands and knees. Now, bend your left knee and raise your left leg to the side, until it is in the same level as your hip',20,'https://i.postimg.cc/7hZ9HjRt/fire-hydrant-left.jpg'),
+     (9,'CLAPPING CRUNCHES','Lie down on the ground. Raise your upper body and bend your knees. Now, clap under the knee, by lifting the legs alternatively',15,'https://i.postimg.cc/1tPMT8rQ/clapping-crunches.jpg'),
+      (9,'PLANK','Lie down on the ground. Raise your upper body and bend your knees.Now,clap under the knees, by lifting the legs alternatively',30,'https://i.postimg.cc/bYmLCNG7/plank.jpg'),
+(10,'WALL PUSHUPS','Intially stand a inch or two away from the wall,Stretch your arms and touch the wall,lean and push against the wall with your arms and then come back,Repeat this.',20,'https://i.postimg.cc/rm8Cjvqy/wall-pushups.jpg'),
+	(10,'SQUATS','Stand with your legs a few inches apart, Stretch your arms to the front and bring the body down,till your thighs are parallel to the floor,Now come back to the intial position,Repeat it',20,'https://i.postimg.cc/VkCRkq7w/squats.jpg'),
+    (10,'SIDE LYING LEG LIFT RIGHT','Start by lying on your side, with the head, resting on the left arm.Now, lift your right leg and then come back to the initial postition.Repeat it.',20,'https://i.postimg.cc/YSBxGvVW/side-lying-leg-lift-right.jpg'),
+    (10,'SIDE LYING LEG LIFT LEFT','Start by lying on your side, with the head, resting on the right arm.Now, lift your left leg and then come back to the initial postition.Repeat it.',15,'https://i.postimg.cc/154BLhwf/side-lying-leg-lift-left.jpg'),
+    (10,'CLAPS OVER HEAD','Initially, stand by keeping your feet, few inches wide. Now, just lift your arms and clap on top of your head.Repeat this.',30,'https://i.postimg.cc/W3nSPs5J/clapsoverhead.jpg'),
+(11,'HEEL TOUCH','Intially lie down on your back and bend your legs,Take the support of your hands on the side,lift your head and touch your heels alternatively with your hands',20,'https://i.postimg.cc/jd9cTg4v/side-heel-touch.jpg'),
+(11,'ALTERNATE DONKEY KICKS','Initially be down on your hands and knees.Now lift the right leg with the knee bend and the leg pointing towards the ceiling.Stretch the leg and return back to the initial position.Repeat it.',20,'https://i.postimg.cc/N09CyJRF/donkey-kicks-left.jpg'),
+
+    (11,'CLAPPING CRUNCHES','Lie down on the ground. Raise your upper body and bend your knees. Now, clap under the knee, by lifting the legs alternatively',20,'https://i.postimg.cc/1tPMT8rQ/clapping-crunches.jpg'),
+(11,'BICYCLE CRUNCHES','Stand with your feet, few inches apart, raise your right knee toward your left elbow return back to the intial position,repeat the same on the other side',20,'https://i.postimg.cc/fRG8c23k/bicycle-crunches.jpg'),
+(11,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',20,'https://i.postimg.cc/HxbSzrZC/flutter-kicks.jpg'),
+(11,'PLANK','Lie down on the ground. Raise your upper body and bend your knees.Now,clap under the knees, by lifting the legs alternatively',35,'https://i.postimg.cc/bYmLCNG7/plank.jpg'),
+(12,'REST','REST',0,'REST'),
+(13,'ALTERNATER HEEL TOUCH','Intially lie down on your back and bend your legs,Take the support of your hands on the side,lift your head and touch your heels alternatively with your hands',26,'https://i.postimg.cc/jd9cTg4v/side-heel-touch.jpg'),
+(13,'WALL PUSHUPS','Intially stand a inch or two away from the wall,Stretch your arms and touch the wall,lean and push against the wall with your arms and then come back,Repeat this ',25,'https://i.postimg.cc/rm8Cjvqy/wall-pushups.jpg'),
+(13,'ADDUCTOR STRECT IN STANDING','Initially, keep your feet, few inches apart with your hands on your hip.Now, stretch your body to the left, by bending  your left leg.Be int this postiton for some time,return to the original position.Repeat this.',30,'https://i.postimg.cc/6p2HGJpD/adductor-stretch-right.jpg'),
+(13,'CLAPS OVER HEAD','Initially, stand by keeping your feet, few inches wide. Now, just lift your arms and clap on top of your head.Repeat this.',20,'https://i.postimg.cc/W3nSPs5J/clapsoverhead.jpg'),
+
+     (13,'BUTT BRIDGE','Lie on your back with your hands by your sides,your knees bent and feet flat on the floor.Raise your hips up to create a straight line from your knees to shoulders.If your hip sag or drop, lower yourself back on the floor.',15,'https://i.postimg.cc/hGVppLxs/butt-bridge.jpg'),
+      (13,'PLANK','Lie down on the ground. Raise your upper body and bend your knees.Now,clap under the knees, by lifting the legs alternatively',35,'https://i.postimg.cc/bYmLCNG7/plank.jpg'),
+
+(14,'SIDE LUNGE','Initially, stand by keeping your feet close to each other.Stretch your right leg, by lowering the body and keeping your left leg straight. Return to the initial position and repeat the same on the left leg',20,'https://i.postimg.cc/prcZpqbW/lunges.jpg'),
+(14,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',21,'https://i.postimg.cc/HxbSzrZC/flutter-kicks.jpg'),
+(14,'PLANK','Lie down on the ground. Raise your upper body and bend your knees.Now,clap under the knees, by lifting the legs alternatively',40,'https://i.postimg.cc/bYmLCNG7/plank.jpg'),
+
+
+     (14,'SWIMMER AND SUPERMAN','Lie down with your face downwards, by stretching your hands forward.Raise your opposite arm and leg alternatively',20,'https://i.postimg.cc/sxDpWxbm/swimming.jpg'),
+(14,'BICYCLE CRUNCHES','Stand with your feet, few inches apart, raise your right knee toward your left elbow return back to the intial position,repeat the same on the other side',20,'https://i.postimg.cc/fRG8c23k/bicycle-crunches.jpg'),
+
+    (14,'CLAPPING CRUNCHES','Lie down on the ground. Raise your upper body and bend your knees. Now, clap under the knee, by lifting the legs alternatively',26,'https://i.postimg.cc/1tPMT8rQ/clapping-crunches.jpg'),
+
+(15,'STANDING BICYCLE CRUNCHES','Start by lying on your back. Raise your right knee towards your left elbow. Return back to the inital position.Repeat the same on the other side',26,'https://i.postimg.cc/s2P4pVd0/standing-bicycle-crunches.jpg'),
+(15,'ALTERNATE SIDE LYING LEG LIFT','Start by lying on your side, with the head, resting on the left arm.Now, lift your right leg and then come back to the initial postition.Repeat it',25,'https://i.postimg.cc/YSBxGvVW/side-lying-leg-lift-right.jpg'),
+(15,'PLANK','Lie down on the ground. Raise your upper body and bend your knees.Now,clap under the knees, by lifting the legs alternatively',60,'https://i.postimg.cc/bYmLCNG7/plank.jpg'),
+(15,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',20,'https://i.postimg.cc/HxbSzrZC/flutter-kicks.jpg'),
+    (15,'SWIMMER AND SUPERMAN','Lie down with your face downwards, by stretching your hands forward.Raise your opposite arm and leg alternatively',20,'https://i.postimg.cc/sxDpWxbm/swimming.jpg'),
+
+(16,'REST','REST',0,'REST'),
+(17,'WALL PUSHUPS','Intially stand a inch or two away from the wall,Stretch your arms and touch the wall,lean and push against the wall with your arms and then come back,Repeat this',30,'https://i.postimg.cc/rm8Cjvqy/wall-pushups.jpg'),
+	(17,'SQUATS','Stand with your legs a few inches apart, Stretch your arms to the front and bring the body down,till your thighs are parallel to the floor,Now come back to the intial position,Repeat it',30,'https://i.postimg.cc/VkCRkq7w/squats.jpg'),
+    (17,'SIDE LYING LEG LIFT RIGHT','Start by lying on your side, with the head, resting on the left arm.Now, lift your right leg and then come back to the initial postition.Repeat it.',30,'https://i.postimg.cc/YSBxGvVW/side-lying-leg-lift-right.jpg'),
+    (17,'SIDE LYING LEG LIFT LEFT','Start by lying on your side, with the head, resting on the right arm.Now, lift your left leg and then come back to the initial postition.Repeat it.',35,'https://i.postimg.cc/154BLhwf/side-lying-leg-lift-left.jpg'),
+    (17,'CLAPS OVER HEAD','Initially, stand by keeping your feet, few inches wide. Now, just lift your arms and clap on top of your head.Repeat this.',30,'https://i.postimg.cc/W3nSPs5J/clapsoverhead.jpg'),
+    (18,'WALL PUSHUPS','Intially stand a inch or two away from the wall,Stretch your arms and touch the wall,lean and push against the wall with your arms and then come back,Repeat this',31,'https://i.postimg.cc/rm8Cjvqy/wall-pushups.jpg'),
+    (18,'STANDING BICYCLE CRUNCHES','Start by lying on your back. Raise your right knee towards your left elbow. Return back to the inital position.Repeat the same on the other side',30,'https://i.postimg.cc/s2P4pVd0/standing-bicycle-crunches.jpg'),
+    (18,'FIRE HYDRANT LEFT','Initially be down on your hands and knees. Now, bend your left knee and raise your left leg to the side, until it is in the same level as your hip',35,'https://i.postimg.cc/7hZ9HjRt/fire-hydrant-left.jpg'),
+    (18,'ALTERNATE FIRE HYDRANT','Initially be down on your hands and knees. Now, bend your left knee and raise your left leg to the side, until it is in the same level as your hip',34,'https://i.postimg.cc/7hZ9HjRt/fire-hydrant-left.jpg'),
+     (18,'CLAPPING CRUNCHES','Lie down on the ground. Raise your upper body and bend your knees. Now, clap under the knee, by lifting the legs alternatively',35,'https://i.postimg.cc/1tPMT8rQ/clapping-crunches.jpg'),
+      (18,'PLANK','Lie down on the ground. Raise your upper body and bend your knees.Now,clap under the knees, by lifting the legs alternatively',38,'https://i.postimg.cc/bYmLCNG7/plank.jpg'),
+(19,'HEEL TOUCH','Intially lie down on your back and bend your legs,Take the support of your hands on the side,lift your head and touch your heels alternatively with your hands',34,'https://i.postimg.cc/jd9cTg4v/side-heel-touch.jpg'),
+(19,'ALTERNATE DONKEY KICKS','Initially be down on your hands and knees.Now lift the right leg with the knee bend and the leg pointing towards the ceiling.Stretch the leg and return back to the initial position.Repeat it.',35,'https://i.postimg.cc/N09CyJRF/donkey-kicks-left.jpg'),
+
+    (19,'CLAPPING CRUNCHES','Lie down on the ground. Raise your upper body and bend your knees. Now, clap under the knee, by lifting the legs alternatively',35,'https://i.postimg.cc/1tPMT8rQ/clapping-crunches.jpg'),
+(19,'BICYCLE CRUNCHES','Stand with your feet, few inches apart, raise your right knee toward your left elbow return back to the intial position,repeat the same on the other side',35,'https://i.postimg.cc/fRG8c23k/bicycle-crunches.jpg'),
+(19,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',35,'https://i.postimg.cc/HxbSzrZC/flutter-kicks.jpg'),
+(19,'PLANK','Lie down on the ground. Raise your upper body and bend your knees.Now,clap under the knees, by lifting the legs alternatively',35,'https://i.postimg.cc/bYmLCNG7/plank.jpg'),
+(20,'REST','REST',0,'REST'),
+(21,'ALTERNATER HEEL TOUCH','Intially lie down on your back and bend your legs,Take the support of your hands on the side,lift your head and touch your heels alternatively with your hands',36,'https://i.postimg.cc/jd9cTg4v/side-heel-touch.jpg'),
+(21,'WALL PUSHUPS','Intially stand a inch or two away from the wall,Stretch your arms and touch the wall,lean and push against the wall with your arms and then come back,Repeat this ',35,'https://i.postimg.cc/rm8Cjvqy/wall-pushups.jpg'),
+(21,'ADDUCTOR STRECT IN STANDING','Initially, keep your feet, few inches apart with your hands on your hip.Now, stretch your body to the left, by bending  your left leg.Be int this postiton for some time,return to the original position.Repeat this.',35,'https://i.postimg.cc/6p2HGJpD/adductor-stretch-right.jpg'),
+(21,'CLAPS OVER HEAD','Initially, stand by keeping your feet, few inches wide. Now, just lift your arms and clap on top of your head.Repeat this.',35,'https://i.postimg.cc/W3nSPs5J/clapsoverhead.jpg'),
+
+     (21,'BUTT BRIDGE','Lie on your back with your hands by your sides,your knees bent and feet flat on the floor.Raise your hips up to create a straight line from your knees to shoulders.If your hip sag or drop, lower yourself back on the floor.',35,'https://i.postimg.cc/hGVppLxs/butt-bridge.jpg'),
+      (21,'PLANK','Lie down on the ground. Raise your upper body and bend your knees.Now,clap under the knees, by lifting the legs alternatively',35,'https://i.postimg.cc/bYmLCNG7/plank.jpg'),
+
+    (22,'STANDING BICYCLE CRUNCHES','Start by lying on your back. Raise your right knee towards your left elbow. Return back to the inital position.Repeat the same on the other side',36,'https://i.postimg.cc/s2P4pVd0/standing-bicycle-crunches.jpg'),
+(22,'ALTERNATE SIDE LYING LEG LIFT','Start by lying on your side, with the head, resting on the left arm.Now, lift your right leg and then come back to the initial postition.Repeat it',35,'https://i.postimg.cc/YSBxGvVW/side-lying-leg-lift-right.jpg'),
+(22,'PLANK','Lie down on the ground. Raise your upper body and bend your knees.Now,clap under the knees, by lifting the legs alternatively',60,'https://i.postimg.cc/bYmLCNG7/plank.jpg'),
+(22,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',35,'https://i.postimg.cc/HxbSzrZC/flutter-kicks.jpg),
+
+     (22,'SWIMMER AND SUPERMAN','Lie down with your face downwards, by stretching your hands forward.Raise your opposite arm and leg alternatively',35,'https://i.postimg.cc/sxDpWxbm/swimming.jpg'),
+(23,'SIDE LUNGE','Initially, stand by keeping your feet close to each other.Stretch your right leg, by lowering the body and keeping your left leg straight. Return to the initial position and repeat the same on the left leg',35,'https://i.postimg.cc/prcZpqbW/lunges.jpg'),
+(23,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',35,'https://i.postimg.cc/HxbSzrZC/flutter-kicks.jpg'),
+(23,'PLANK','Lie down on the ground. Raise your upper body and bend your knees.Now,clap under the knees, by lifting the legs alternatively',40,'https://i.postimg.cc/bYmLCNG7/plank.jpg'),
+
+
+     (23,'SWIMMER AND SUPERMAN','Lie down with your face downwards, by stretching your hands forward.Raise your opposite arm and leg alternatively', 35,'https://i.postimg.cc/sxDpWxbm/swimming.jpg'),
+(23,'BICYCLE CRUNCHES','Stand with your feet, few inches apart, raise your right knee toward your left elbow return back to the intial position,repeat the same on the other side',35,'https://i.postimg.cc/fRG8c23k/bicycle-crunches.jpg'),
+
+    (23,'CLAPPING CRUNCHES','Lie down on the ground. Raise your upper body and bend your knees. Now, clap under the knee, by lifting the legs alternatively',36,'https://i.postimg.cc/1tPMT8rQ/clapping-crunches.jpg'),
+(24,'REST','REST',0,'REST'),
+
+(25,'WALL PUSHUPS','Intially stand a inch or two away from the wall,Stretch your arms and touch the wall,lean and push against the wall with your arms and then come back,Repeat this',41,'https://i.postimg.cc/rm8Cjvqy/wall-pushups.jpg'),
+    (25,'STANDING BICYCLE CRUNCHES','Start by lying on your back. Raise your right knee towards your left elbow. Return back to the inital position.Repeat the same on the other side',40,'https://i.postimg.cc/s2P4pVd0/standing-bicycle-crunches.jpg'),
+    (25,'FIRE HYDRANT LEFT','Initially be down on your hands and knees. Now, bend your left knee and raise your left leg to the side, until it is in the same level as your hip',40,'https://i.postimg.cc/7hZ9HjRt/fire-hydrant-left.jpg'),
+    (25,'ALTERNATE FIRE HYDRANT','Initially be down on your hands and knees. Now, bend your left knee and raise your left leg to the side, until it is in the same level as your hip',40,'https://i.postimg.cc/7hZ9HjRt/fire-hydrant-left.jpg'),
+     (25,'CLAPPING CRUNCHES','Lie down on the ground. Raise your upper body and bend your knees. Now, clap under the knee, by lifting the legs alternatively',45,'https://i.postimg.cc/1tPMT8rQ/clapping-crunches.jpg'),
+      (25,'PLANK','Lie down on the ground. Raise your upper body and bend your knees.Now,clap under the knees, by lifting the legs alternatively',40,'https://i.postimg.cc/bYmLCNG7/plank.jpg'),
+(26,'WALL PUSHUPS','Intially stand a inch or two away from the wall,Stretch your arms and touch the wall,lean and push against the wall with your arms and then come back,Repeat this',40,'https://i.postimg.cc/rm8Cjvqy/wall-pushups.jpg'),
+	(26,'SQUATS','Stand with your legs a few inches apart, Stretch your arms to the front and bring the body down,till your thighs are parallel to the floor,Now come back to the intial position,Repeat it',40,'https://i.postimg.cc/VkCRkq7w/squats.jpg'),
+    (26,'SIDE LYING LEG LIFT RIGHT','Start by lying on your side, with the head, resting on the left arm.Now, lift your right leg and then come back to the initial postition.Repeat it.',40,'https://i.postimg.cc/YSBxGvVW/side-lying-leg-lift-right.jpg'),
+    (26,'SIDE LYING LEG LIFT LEFT','Start by lying on your side, with the head, resting on the right arm.Now, lift your left leg and then come back to the initial postition.Repeat it.',45,'https://i.postimg.cc/154BLhwf/side-lying-leg-lift-left.jpg'),
+    (26,'CLAPS OVER HEAD','Initially, stand by keeping your feet, few inches wide. Now, just lift your arms and clap on top of your head.Repeat this.',40,'https://i.postimg.cc/W3nSPs5J/clapsoverhead.jpg'),
+(27,'HEEL TOUCH','Intially lie down on your back and bend your legs,Take the support of your hands on the side,lift your head and touch your heels alternatively with your hands',40,'https://i.postimg.cc/jd9cTg4v/side-heel-touch.jpg'),
+(27,'ALTERNATE DONKEY KICKS','Initially be down on your hands and knees.Now lift the right leg with the knee bend and the leg pointing towards the ceiling.Stretch the leg and return back to the initial position.Repeat it.',40,'https://i.postimg.cc/N09CyJRF/donkey-kicks-left.jpg'),
+
+    (27,'CLAPPING CRUNCHES','Lie down on the ground. Raise your upper body and bend your knees. Now, clap under the knee, by lifting the legs alternatively',40,'https://i.postimg.cc/1tPMT8rQ/clapping-crunches.jpg'),
+(27,'BICYCLE CRUNCHES','Stand with your feet, few inches apart, raise your right knee toward your left elbow return back to the intial position,repeat the same on the other side',40,'https://i.postimg.cc/fRG8c23k/bicycle-crunches.jpg'),
+(27,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',40,'https://i.postimg.cc/HxbSzrZC/flutter-kicks.jpg'),
+(27,'PLANK','Lie down on the ground. Raise your upper body and bend your knees.Now,clap under the knees, by lifting the legs alternatively',45,'https://i.postimg.cc/bYmLCNG7/plank.jpg'),
+(28,'REST','REST',0,'REST'),
+(29,'ALTERNATER HEEL TOUCH','Intially lie down on your back and bend your legs,Take the support of your hands on the side,lift your head and touch your heels alternatively with your hands',46,'https://i.postimg.cc/jd9cTg4v/side-heel-touch.jpg'),
+(29,'WALL PUSHUPS','Intially stand a inch or two away from the wall,Stretch your arms and touch the wall,lean and push against the wall with your arms and then come back,Repeat this ',45,'https://i.postimg.cc/rm8Cjvqy/wall-pushups.jpg'),
+(29,'ADDUCTOR STRECT IN STANDING','Initially, keep your feet, few inches apart with your hands on your hip.Now, stretch your body to the left, by bending  your left leg.Be int this postiton for some time,return to the original position.Repeat this.',40,'https://i.postimg.cc/6p2HGJpD/adductor-stretch-right.jpg'),
+(29,'CLAPS OVER HEAD','Initially, stand by keeping your feet, few inches wide. Now, just lift your arms and clap on top of your head.Repeat this.',40,'https://i.postimg.cc/W3nSPs5J/clapsoverhead.jpg'),
+
+     (29,'BUTT BRIDGE','Lie on your back with your hands by your sides,your knees bent and feet flat on the floor.Raise your hips up to create a straight line from your knees to shoulders.If your hip sag or drop, lower yourself back on the floor.',45,'https://i.postimg.cc/hGVppLxs/butt-bridge.jpg'),
+      (29,'PLANK','Lie down on the ground. Raise your upper body and bend your knees.Now,clap under the knees, by lifting the legs alternatively',45,'https://i.postimg.cc/bYmLCNG7/plank.jpg'),
+
+(30,'SIDE LUNGE','Initially, stand by keeping your feet close to each other.Stretch your right leg, by lowering the body and keeping your left leg straight. Return to the initial position and repeat the same on the left leg',40,'https://i.postimg.cc/prcZpqbW/lunges.jpg'),
+(30,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',41,'https://i.postimg.cc/HxbSzrZC/flutter-kicks.jpg'),
+(30,'PLANK','Lie down on the ground. Raise your upper body and bend your knees.Now,clap under the knees, by lifting the legs alternatively',44,'https://i.postimg.cc/bYmLCNG7/plank.jpg'),
+
+
+     (30,'SWIMMER AND SUPERMAN','Lie down with your face downwards, by stretching your hands forward.Raise your opposite arm and leg alternatively',40,'https://i.postimg.cc/sxDpWxbm/swimming.jpg'),
+(30,'BICYCLE CRUNCHES','Stand with your feet, few inches apart, raise your right knee toward your left elbow return back to the intial position,repeat the same on the other side',40,'https://i.postimg.cc/fRG8c23k/bicycle-crunches.jpg'),
+
+    (30,'CLAPPING CRUNCHES','Lie down on the ground. Raise your upper body and bend your knees. Now, clap under the knee, by lifting the legs alternatively',46,'https://i.postimg.cc/1tPMT8rQ/clapping-crunches.jpg');
+    select * from overweight_female_workout;
+    
+
+
+
+
